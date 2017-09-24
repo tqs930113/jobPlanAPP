@@ -1,0 +1,31 @@
+/*日历样式*/
+.demo-box{
+	padding-top:.1rem;
+	width: 100%;
+	background-color:transparent;
+	border:none;
+}
+.ht-rili-rightarr {
+	background: url(../images/right-arr.png) right center no-repeat;
+	width: 18px;
+}
+.ht-rili-leftarr {
+	background: url(../images/left-arr.png) left center no-repeat;
+	width:18px;
+}
+.ht-rili-td{
+	background-color:transparent;
+}
+.ht-rili-td-active{
+	background: #f00;
+	color:#fff;
+}
+.ht-rili-td-active .ht-rili-money{
+	color:#fff;
+}
+.ht-rili-head{
+	border-bottom:1px solid #bbb;
+}
+.ht-rili-body{
+	padding-top: .3rem;
+}

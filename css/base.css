@@ -1,0 +1,226 @@
+/*m-index.html样式*/
+.container article{
+	width: 100%;
+	margin-top:1.3rem;
+}
+.container article h1{
+	text-align: center;
+}
+.container article p{
+	width: 71%;
+	margin:0 auto;
+	text-align: center;
+	padding-top:1.1rem;
+}
+/*jobPlan*/
+/*jpbPlan.html样式*/
+/*.caption*/
+.caption{
+	height: .54rem;
+	line-height: .54rem;
+}
+.caption .time{
+	margin:0;
+	text-align: right;
+	height: .54rem;
+	line-height: .54rem;
+}
+.caption .middle{
+	text-align: left;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	height: .54rem;
+}
+.caption .middle div{
+	display: block;
+	line-height: .2rem;
+	width: 100%;
+	font-size:10px;
+}
+.caption .refresh{
+	text-align: right;;
+}
+.caption .more{
+	text-align: left;
+}
+
+/*更多.more*/
+.dropdown-menu {
+	top:72%;
+	left: -1.35rem;
+}
+.dropdown-menu > li{
+	border-bottom:1px solid #bbb;
+}
+.dropdown-menu > li:last-of-type{
+	border:none;
+}
+/*intelligentCompute*/
+/*intelligentCompute.html样式*/
+.top{
+	position: absolute;
+    height: .5rem;
+    display: flex;
+    justify-content: space-between;
+    color: #9d9e9d;
+    border-bottom: 1px solid #bbb;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: .15rem;
+}
+.top .back{
+	color:#9d9e9d;
+	outline:none;
+}
+/*top下块级元素撑开top元素的高度*/
+.margin-top{
+	margin-top:.5rem;
+	padding-top:10%;
+}
+.row {
+	padding-bottom: 10%;
+}
+.row .left label{
+	height: .34rem;
+	line-height: .34rem;
+	width: 100%;
+	text-align: right;
+}
+.row .right .glyphicon{
+	top:0;
+}
+.row .right{
+	padding-right: 10%;
+}
+.restDays:focus{
+	outline: none;
+	border-color:#bbb;
+	box-shadow:none ;
+}
+/*期望日期的选择按钮*/
+.choose_date >div:first-of-type{
+	width: 100%;
+	height: .3rem;
+}
+.laydate-icon{
+	width:.3rem;
+	display:inline-block;
+	border:none !important;
+	float: left;
+	margin-top: .05rem;
+}
+/*期望日期选择弹出窗*/
+#laydate_box{
+	left:50% !important;
+   	top:1.81rem !important;
+   	margin-left:-1.20rem;
+}
+@media screen and (min-width: 400px) and (max-width: 767px){
+	#laydate_box{
+		top:1.92rem !important
+	}
+}
+@media screen and (min-width: 767px) and (max-width:1023px){
+	#laydate_box{
+		top:2.6rem !important
+	}
+}
+@media screen and (min-width: 1024px) {
+	#laydate_box{
+		top:3.1rem  !important
+	}
+}
+.laydate_body .laydate_top{
+	    height: .33rem !important;
+}
+.laydate_body .laydate_bottom{
+	height: .3rem !important;
+}
+#laydate_ys{
+	overflow:scroll;
+}
+#laydate_clear{
+	display: none !important;
+}
+/*已选期望日期*/
+.date_itme >input{
+	width: 1.45rem;
+	border:none;
+}
+/*删除已选期望日期*/
+.delete_icon{
+	width: .16rem;
+	height: .16rem;
+	display: inline-block;
+	background: url(../images/delete.png) no-repeat center bottom;
+    background-size: contain;
+}
+/*推荐按钮*/
+.row .recommend{
+	width: 80%;
+	margin:0 auto;
+	display: block;
+	outline:0;
+	border:1px solid #bbb;
+	border-radius:.04rem;
+	background-color:#fff;
+}
+.row .recommend:active{
+	outline:none;
+	box-shadow: none;
+}
+.row .recommendIcon{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -8px;
+}
+/*推荐内容*/
+.recommendContent .row{
+	padding-bottom: 5%;
+}
+.recommend-caption h4{
+	border-bottom:1px solid #bbb;
+	text-indent: .05rem;
+	height: .3rem;
+}
+.recommend-caption h4 span{
+	padding-left: .1rem;
+	color:#bbb;
+	font-weight: normal;
+	font-size: .16rem;
+}
+.recommendContent{
+	display: none;
+}
+.text-right{
+	text-align: right;
+}
+/*新建计划*/
+.newPlan{
+	padding-right: .25rem;
+	color:#ff0000;
+}
+.newPlan > a{
+	text-decoration:underline;
+	color:#f00;
+}
+.glyphicon-ok:before{
+	padding-right: .05rem ;
+}
+.newPlan > a,
+.newPlan > span{
+	float: right;
+}
+/*event*/
+/*newEvent.html*/
+header{
+	display: flex;
+	justify-content:space-between;
+}
+header >div{
+
+}

@@ -1,0 +1,35 @@
+html{
+	font-size: 100px;
+}
+body{
+	font-size: 16px;
+}
+footer{
+	position:fixed;
+	bottom:0;
+	width: 100%;
+	height: .65rem;
+	line-height: .65rem;
+}
+footer nav{
+	display: flex;
+	justify-content:space-around;
+}
+footer nav  .nav-item{
+	display: block;
+	height: .65rem;
+	text-decoration:none !important;
+	position: relative;
+}
+footer nav   .active{
+	color:rgb(20,68,106);
+}
+footer nav a .font-icon{
+	display: block ;
+	width: .16rem;
+	width: .19rem;
+	position: relative;
+	top:.13rem;
+	margin:0 auto;
+	
+}

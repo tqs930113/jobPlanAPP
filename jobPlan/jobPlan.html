@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="Keywords" content="工作计划">
+	<meta name="description"  content="个人工作计划的首页">
+	<title>工作计划首页</title>
+
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+		<!-- 日历 -->
+	<link rel="stylesheet" href="../css/calendar/calendar-pro.css" />
+	<link rel="stylesheet" type="text/css" href="../css/calendar-ui.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/base.css">
+
+
+	<SCRIPT TYPE="text/javascript" src="../js/jquery-3.2.1.js"></SCRIPT>
+	<SCRIPT TYPE="text/javascript" src="../bootstrap/js/bootstrap.min.js"></SCRIPT>
+</head>
+<body>
+	<div class="container">
+		<!-- 工作日志 -->
+		<div class="row caption">
+			<div class="time col-xs-4 col-sm-4 col-md-4 col-lg-4 h3">8月23日</div>
+			<div class="middle col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="year">2017</div>
+				<div class="dateCount">3天后</div>
+			</div>
+			<!-- 更新 -->
+			<div class="refresh col-xs-2 col-sm-2 col-md-2 col-lg-2"><span id="refresh" class="glyphicon glyphicon-refresh"></span></div>
+			<!-- 更多设置 -->
+			<div class="dropdown more col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				<span  id="more" class=" dropdown-toggle glyphicon glyphicon-option-vertical" data-toggle="dropdown"></span>
+				<ul class="dropdown-menu" aria-labelledby="more">
+				    <li><a href="intelligentCompute.html">智能计算假期</a></li>
+				    <li><a href="#">设置</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<!-- 日历容器 -->
+		<div class="calendar-box demo-box">
+			
+		</div>
+
+	</div>
+	<footer>
+		<nav class="navbar navbar-default navbar-fixed-bottom">
+			<a href="#event" class="nav-item "><span class="font-icon glyphicon glyphicon-file" ></span>事件</a>
+			<a href="#new" class="nav-item"><span class="glyphicon glyphicon-plus font-icon"></span>新建</a>
+			<a href="#nothing" class="nav-item "><span class="glyphicon glyphicon-bookmark font-icon"></span>未知</a>
+		</nav>
+	</footer>
+	<script src="../js/calendar/calendar-pro.js"></script>
+	<script src="../js/base.js"></script>
+	<script>
+		$('.calendar-box').calendar({
+			ele : '.demo-box', //依附
+			title : 'SCHEDULE',
+			// beginDate : '2017-10-07',
+			// endDate : '2017-12-04',
+			data : [
+			// 工作计划日历，已经有计划安排的日期
+				// {date:'2016-11-30',data:'夜'},
+				{date:'2017-11-30',data:'白'},
+				{date:'2017-11-01',data:'下'},
+				{date:'2017-11-02',data:'夜'},
+				{date:'2017-11-03',data:'休'},
+				{date:'2017-11-04',data:'上'},
+			]
+		});
+	</script>
+</body>
+</html>

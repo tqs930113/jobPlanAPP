@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zn-cmn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="Keywords" content="智能推算">
+	<meta name="description"  content="个人工作计划的智能推算页面">
+	<title>工作计划-智能推算</title>
+
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/base.css">
+
+	<SCRIPT TYPE="text/javascript" src="../js/jquery-3.2.1.js"></SCRIPT>
+	<SCRIPT TYPE="text/javascript" src="../bootstrap/js/bootstrap.min.js"></SCRIPT>
+	<script type="text/javascript" src="../js/laydate/laydate.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<form action="#">
+		<div class="top">
+			<div class="left">
+				<a class="back glyphicon glyphicon-menu-left" id="back" href="#back"></a>
+				智能计算
+			</div>
+			<div class="right">
+				<span id="refresh" class="glyphicon glyphicon-refresh"></span>
+			</div>
+		</div>
+		<div class="row margin-top ">
+			<div class="left col-xs-5 col-sm-5 col-md-5 col-lg-5"><label for="restDays">期望休息天数</label></div>
+			<div class="right input-group col-xs-7 col-sm-7 col-md-7 col-lg-7">
+				<input type="text" id="restDays" class="restDays form-control" placeholder="期望休息的天数">
+			<span class="input-group-addon glyphicon glyphicon-time"></span></div>
+		</div>
+		<div class="row">
+			<div class="left col-xs-5 col-sm-5 col-md-5 col-lg-5"><label >期望包含的日期</label></div>
+			<div class="right choose_date input-group col-xs-7 col-sm-7 col-md-7 col-lg-7">
+				   <div  ><span class="laydate-icon"></span></div>
+					<input  class="date hidden" name="temp" id="date" ></input>
+					<div class="choose-dates"> 
+					</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<span style="width:1px" class="recommendIcon glyphicon glyphicon-collapse-down"></span><input type="submit" class="recommend btn" id="recommendBtn" value="推荐">
+			</div>
+		</div>
+		</form>
+		<div class="row recommendContent" id="recommendContent">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div  >
+					<div class="row">
+						<div class="recommend-caption col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h4>计算结果<span>(休3天/调2天)</span></h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="text-right col-xs-2 col-sm-2 col-md-2 col-lg-2">1</div>
+						<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">2017年08月23日</div>
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">休</div>
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+					</div>
+					<div class="row">
+						<div class="text-right col-xs-2 col-sm-2 col-md-2 col-lg-2">2</div>
+						<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">2017年08月24日</div>
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">白<em>调休</em></div>
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><span class="glyphicon glyphicon-plus-sign"></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+						<div class="newPlan col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<a href="#"><span class="glyphicon glyphicon-ok"></span>新建</a>
+						</div>
+		</div>
+	</div>
+		<footer>
+		<nav class="navbar navbar-default navbar-fixed-bottom">
+			<a href="#event" class="nav-item "><span class="font-icon glyphicon glyphicon-file" ></span>事件</a>
+			<a href="#new" class="nav-item"><span class="glyphicon glyphicon-plus font-icon"></span>新建</a>
+			<a href="#nothing" class="nav-item "><span class="glyphicon glyphicon-bookmark font-icon"></span>未知</a>
+		</nav>
+	</footer>
+	<script src="../js/base.js"></script>
+	<script type="text/javascript" src="../js/laydate-ui.js"></script>
+</body>
+</html>
